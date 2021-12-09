@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">LoginAppEfe</string>
+    <string name="password">Password</string>
+    <string name="email">Email</string>
+    <string name="registrarse">Registrarse</string>
+    <string name="bienvenido_de_nuevo">Bienvenido de nuevo!</string>
+    <string name="iniciar_sesion_registrarse">Iniciar sesión o Registrarse</string>
+    <string name="iniciar_sesion">iniciar sesión</string>
+</resources>

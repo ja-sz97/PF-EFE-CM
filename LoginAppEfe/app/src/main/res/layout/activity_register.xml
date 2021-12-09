@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/loginback"
+    tools:context=".RegisterActivity">
+
+    <Button
+        android:id="@+id/btnRegisterConfirm"
+        android:layout_width="253dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginEnd="34dp"
+        android:background="@drawable/my_button_bg"
+        android:cursorVisible="true"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="Registrarse"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ConfirmRegisterPass" />
+
+    <TextView
+        android:id="@+id/txtRegister"
+        android:layout_width="325dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="34dp"
+        android:layout_marginBottom="30dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Registrarse"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="#FFAB00"
+        android:textSize="34sp"
+        android:typeface="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.053" />
+
+    <EditText
+        android:id="@+id/RegisterEmail"
+        android:layout_width="316dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="34dp"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:textAllCaps="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.555"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/RegisterName"
+        app:layout_constraintVertical_bias="0.048" />
+
+    <EditText
+        android:id="@+id/RegisterName"
+        android:layout_width="316dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="34dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Nombre Apellido"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtRegister"
+        app:layout_constraintVertical_bias="0.044" />
+
+    <EditText
+        android:id="@+id/RegisterPass"
+        android:layout_width="316dp"
+        android:layout_height="55dp"
+        android:ems="10"
+        android:hint="Contraseña"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/RegisterEmail"
+        app:layout_constraintVertical_bias="0.048" />
+
+    <EditText
+        android:id="@+id/ConfirmRegisterPass"
+        android:layout_width="316dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="320dp"
+        android:ems="10"
+        android:hint="Confirmar contraseña"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/RegisterPass"
+        app:layout_constraintVertical_bias="0.406" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
