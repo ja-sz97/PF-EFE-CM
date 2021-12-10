@@ -5,9 +5,9 @@
       <map>
         <entry key="..\:/EFEcompumovil/appfinal/PF-EFE-CM/LoginAppEfe/app/src/main/res/drawable/background_image.xml" value="0.18640350877192982" />
         <entry key="..\:/EFEcompumovil/appfinal/PF-EFE-CM/LoginAppEfe/app/src/main/res/drawable/my_button_bg.xml" value="0.1638888888888889" />
-        <entry key="..\:/EFEcompumovil/appfinal/PF-EFE-CM/LoginAppEfe/app/src/main/res/layout/activity_home.xml" value="0.3087719298245614" />
-        <entry key="..\:/EFEcompumovil/appfinal/PF-EFE-CM/LoginAppEfe/app/src/main/res/layout/activity_main.xml" value="0.22" />
-        <entry key="..\:/EFEcompumovil/appfinal/PF-EFE-CM/LoginAppEfe/app/src/main/res/layout/activity_register.xml" value="0.3087719298245614" />
+        <entry key="..\:/EFEcompumovil/appfinal/PF-EFE-CM/LoginAppEfe/app/src/main/res/layout/activity_home.xml" value="0.33" />
+        <entry key="..\:/EFEcompumovil/appfinal/PF-EFE-CM/LoginAppEfe/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/EFEcompumovil/appfinal/PF-EFE-CM/LoginAppEfe/app/src/main/res/layout/activity_register.xml" value="0.33" />
       </map>
     </option>
   </component>
@@ -16,5 +16,12 @@
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.9" />
+      </ProjectState>
+    </option>
   </component>
 </project>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "202109441420",
+    "project_id": "appefe-e994d",
+    "storage_bucket": "appefe-e994d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:202109441420:android:bd08b1c0f43fd8481db2a9",
+        "android_client_info": {
+          "package_name": "com.example.loginappefe"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "202109441420-j499nf8uadl8j0g18epan3fsf42sh309.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAfCxNdOFl2PEk7DVWYjctLc2rMJEAo6Us"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "202109441420-j499nf8uadl8j0g18epan3fsf42sh309.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
