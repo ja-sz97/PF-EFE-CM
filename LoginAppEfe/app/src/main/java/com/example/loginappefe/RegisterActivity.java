@@ -42,7 +42,7 @@ public class RegisterActivity extends AppCompatActivity {
         et_email = findViewById(R.id.txtEmailRegister);
         et_pass = findViewById(R.id.txtPassRegister);
         et_confirm_pass = findViewById(R.id.txtConfirmPassRegister);
-        
+
 
         btn_register.setOnClickListener(new View.OnClickListener() {
             @Override

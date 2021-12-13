@@ -8,8 +8,9 @@
     <string name="iniciar_sesion">iniciar sesión</string>
     <string name="nombre_apellido">Nombre Apellido</string>
     <string name="confirmar_contrasena">Confirmar contraseña</string>
-    <string name="homeview">HomeView</string>
+    <string name="homeview">Valores Monedas</string>
     <string name="invalid_mail">Ingrese un email válido</string>
     <string name="invalid_pass">Ingrese una contraseña mayor a 6 dígitos</string>
     <string name="cerrar_sesion">Cerrar Sesión</string>
+    <string name="enviar">Enviar</string>
 </resources>

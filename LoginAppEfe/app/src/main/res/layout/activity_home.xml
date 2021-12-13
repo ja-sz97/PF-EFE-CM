@@ -8,28 +8,116 @@
     tools:context=".HomeActivity">
 
     <TextView
+        android:id="@+id/txtEuro"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:background="#808B96"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtDolar"
+        app:layout_constraintVertical_bias="0.035" />
+
+    <TextView
+        android:id="@+id/txtUf"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:background="#808B96"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtEuro"
+        app:layout_constraintVertical_bias="0.044" />
+
+    <TextView
+        android:id="@+id/txtUtm"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:background="#808B96"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtUf"
+        app:layout_constraintVertical_bias="0.046" />
+
+    <TextView
+        android:id="@+id/txtBitcoin"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="25dp"
+        android:background="#808B96"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtUtm"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
         android:id="@+id/txtHome"
         android:layout_width="143dp"
         android:layout_height="60dp"
         android:text="@string/homeview"
+        android:textAlignment="center"
+        android:textColor="@color/black"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.084"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.022" />
 
     <Button
         android:id="@+id/btn_sign_out"
         android:layout_width="126dp"
         android:layout_height="62dp"
+        android:background="@drawable/exit_btn"
         android:text="@string/cerrar_sesion"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.94"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.02" />
+
+    <Button
+        android:id="@+id/btnSendApi"
+        android:layout_width="317dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="180dp"
+        android:background="@drawable/send_btn"
+        android:text="@string/enviar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtBitcoin" />
+
+    <TextView
+        android:id="@+id/txtDolar"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:background="#808B96"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.146" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
