@@ -21,7 +21,7 @@ import com.google.firebase.auth.FirebaseAuthException;
 import com.google.firebase.auth.FirebaseUser;
 
 public class MainActivity extends AppCompatActivity {
-    Button btn_login, btn_register, btn_recovery;
+    Button btn_login, btn_register;
     EditText et_email, et_pass;
 
     AwesomeValidation awesomeValidation;

@@ -22,7 +22,7 @@ import java.util.regex.Pattern;
 
 public class RegisterActivity extends AppCompatActivity {
     Button btn_register;
-    EditText et_email, et_pass, et_confirm_pass, et_name;
+    EditText et_email, et_pass, et_confirm_pass;
 
     FirebaseAuth firebaseAuth;
     AwesomeValidation awesomeValidation;
@@ -49,22 +49,26 @@ public class RegisterActivity extends AppCompatActivity {
             public void onClick(View view) {
                 String mail = et_email.getText().toString();
                 String pass = et_pass.getText().toString();
-
-                if (awesomeValidation.validate()){
-                    firebaseAuth.createUserWithEmailAndPassword(mail,pass).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
-                        @Override
-                        public void onComplete(@NonNull Task<AuthResult> task) {
-                            if (task.isSuccessful()){
-                                Toast.makeText(RegisterActivity.this, "Usuario Creado Con éxito", Toast.LENGTH_SHORT).show();
-                                finish();
-                            }else{
-                                String errorCode = ((FirebaseAuthException) task.getException()).getErrorCode();
-                                dameToastdeerror(errorCode);
+                String conf_pass =  et_confirm_pass.getText().toString();
+                if(pass.equals(conf_pass)){
+                    if (awesomeValidation.validate()){
+                        firebaseAuth.createUserWithEmailAndPassword(mail,pass).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+                            @Override
+                            public void onComplete(@NonNull Task<AuthResult> task) {
+                                if (task.isSuccessful()){
+                                    Toast.makeText(RegisterActivity.this, "Usuario Creado Con éxito", Toast.LENGTH_SHORT).show();
+                                    finish();
+                                }else{
+                                    String errorCode = ((FirebaseAuthException) task.getException()).getErrorCode();
+                                    dameToastdeerror(errorCode);
+                                }
                             }
-                        }
-                    });
+                        });
+                    }else{
+                        Toast.makeText(RegisterActivity.this, "Complete Todos los Datos!", Toast.LENGTH_SHORT).show();
+                    }
                 }else{
-                    Toast.makeText(RegisterActivity.this, "Complete Todos los Datos!", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(RegisterActivity.this, "Las contraseñas deben ser iguales ", Toast.LENGTH_SHORT).show();
                 }
             }
         });

@@ -3,7 +3,7 @@
     <string name="password">Contraseña</string>
     <string name="email">Email</string>
     <string name="registrarse">Registrarse</string>
-    <string name="bienvenido_de_nuevo">Bienvenido!</string>
+    <string name="bienvenido_de_nuevo">Bienvenido nuevamente!</string>
     <string name="iniciar_sesion_registrarse">Iniciar sesión o Registrarse</string>
     <string name="iniciar_sesion">iniciar sesión</string>
     <string name="nombre_apellido">Nombre Apellido</string>
@@ -12,5 +12,5 @@
     <string name="invalid_mail">Ingrese un email válido</string>
     <string name="invalid_pass">Ingrese una contraseña mayor a 6 dígitos</string>
     <string name="cerrar_sesion">Cerrar Sesión</string>
-    <string name="enviar">Enviar</string>
+    <string name="enviar">Consultar</string>
 </resources>

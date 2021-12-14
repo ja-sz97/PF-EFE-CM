@@ -12,49 +12,22 @@
         android:layout_width="350dp"
         android:layout_height="50dp"
         android:background="#808B96"
+        android:text="Euro"
         android:textAlignment="center"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.488"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtDolar"
-        app:layout_constraintVertical_bias="0.035" />
+        app:layout_constraintVertical_bias="0.043" />
 
     <TextView
         android:id="@+id/txtUf"
         android:layout_width="350dp"
         android:layout_height="50dp"
         android:background="#808B96"
-        android:textAlignment="center"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.489"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtEuro"
-        app:layout_constraintVertical_bias="0.044" />
-
-    <TextView
-        android:id="@+id/txtUtm"
-        android:layout_width="350dp"
-        android:layout_height="50dp"
-        android:textAlignment="center"
-        android:textSize="20sp"
-        android:background="#808B96"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.489"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtUf"
-        app:layout_constraintVertical_bias="0.046" />
-
-    <TextView
-        android:id="@+id/txtBitcoin"
-        android:layout_width="350dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="25dp"
-        android:background="#808B96"
+        android:text="UF"
         android:textAlignment="center"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -62,16 +35,46 @@
         app:layout_constraintHorizontal_bias="0.488"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtUtm"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.053" />
+
+    <TextView
+        android:id="@+id/txtUtm"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:background="#808B96"
+        android:text="UTM"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtEuro"
+        app:layout_constraintVertical_bias="0.037" />
+
+    <TextView
+        android:id="@+id/txtBitcoin"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:background="#808B96"
+        android:text="Bitcoin"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtUf"
+        app:layout_constraintVertical_bias="0.052" />
 
     <TextView
         android:id="@+id/txtHome"
-        android:layout_width="143dp"
-        android:layout_height="60dp"
+        android:layout_width="168dp"
+        android:layout_height="66dp"
         android:text="@string/homeview"
         android:textAlignment="center"
         android:textColor="@color/black"
-        android:textSize="20sp"
+        android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -97,7 +100,6 @@
         android:id="@+id/btnSendApi"
         android:layout_width="317dp"
         android:layout_height="50dp"
-        android:layout_marginBottom="180dp"
         android:background="@drawable/send_btn"
         android:text="@string/enviar"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -110,14 +112,27 @@
         android:layout_width="350dp"
         android:layout_height="50dp"
         android:background="#808B96"
+        android:text="Dólar"
         android:textAlignment="center"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintHorizontal_bias="0.488"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.146" />
+        app:layout_constraintVertical_bias="0.233" />
+
+    <TextView
+        android:id="@+id/txtViewValues"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="124dp"
+        android:text="Para ver los valores presione el botón consultar "
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
