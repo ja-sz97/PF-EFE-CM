@@ -13,4 +13,9 @@
     <string name="invalid_pass">Ingrese una contraseña mayor a 6 dígitos</string>
     <string name="cerrar_sesion">Cerrar Sesión</string>
     <string name="enviar">Consultar</string>
+    <string name="UF">UF</string>
+    <string name="dolar">Dólar</string>
+    <string name="euro">Euro</string>
+    <string name="utm">UTM</string>
+    <string name="bitDolar">Bitcoin en dólares</string>
 </resources>

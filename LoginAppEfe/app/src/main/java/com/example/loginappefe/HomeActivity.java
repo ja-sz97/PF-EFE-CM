@@ -2,10 +2,8 @@ package com.example.loginappefe;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -69,11 +67,11 @@ public class HomeActivity extends AppCompatActivity {
             public void onResponse(String response) {
                 try {
                     JSONObject jsonObject = new JSONObject(response);
-                    String uf = "UF: " + "$" + jsonObject.getJSONObject("uf").getString("valor");
-                    String dolar = "Dolar: " + "$" + jsonObject.getJSONObject("dolar").getString("valor");
-                    String euro = "Euro: " + "$" + jsonObject.getJSONObject("euro").getString("valor");
-                    String utm = "UTM: " + "$" + jsonObject.getJSONObject("utm").getString("valor");
-                    String bit = "Bitcoin en dolar: " + "$" + jsonObject.getJSONObject("bitcoin").getString("valor");
+                    String uf = getString(R.string.UF) +": "+ "$" + jsonObject.getJSONObject("uf").getString("valor");
+                    String dolar = getString(R.string.dolar)+": " + "$" + jsonObject.getJSONObject("dolar").getString("valor");
+                    String euro = getString(R.string.euro)+": " + "€" + jsonObject.getJSONObject("euro").getString("valor");
+                    String utm = getString(R.string.utm)+": " + "$" + jsonObject.getJSONObject("utm").getString("valor");
+                    String bit = getString(R.string.bitDolar)+": " + "$" + jsonObject.getJSONObject("bitcoin").getString("valor");
                     txtUf.setText(uf);
                     txtUtm.setText(utm);
                     txtDolar.setText(dolar);
